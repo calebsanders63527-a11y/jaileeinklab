@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Jailee Ink Lab | Tattoo Booking</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #1a001f;
+        color: white;
+    }
+
+    header {
+        background: linear-gradient(90deg, #7a00cc, #b266ff);
+        padding: 30px;
+        text-align: center;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 40px;
+    }
+
+    header p {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+    .container {
+        max-width: 700px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .card {
+        background: #2a0033;
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 15px;
+    }
+
+    input, textarea, button {
+        width: 100%;
+        margin-top: 10px;
+        padding: 12px;
+        border-radius: 10px;
+        border: none;
+        font-size: 16px;
+    }
+
+    button {
+        background: #b266ff;
+        color: white;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    button:hover {
+        background: #9a4dff;
+    }
+
+    .cashapp {
+        background: #111;
+        padding: 15px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    a {
+        color: #b266ff;
+        text-decoration: none;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Jailee Ink Lab</h1>
+    <p>Tattoo Artist • Custom Ink • Booking Only</p>
+</header>
+
+<div class="container">
+
+    <!-- BOOKING FORM (NETLIFY FORMS ENABLED) -->
+    <div class="card">
+        <h2>Book Your Tattoo</h2>
+
+        <form name="booking" method="POST" data-netlify="true">
+
+            <!-- REQUIRED for Netlify -->
+            <input type="hidden" name="form-name" value="booking" />
+
+            <input type="text" name="name" placeholder="Your Name" required>
+
+            <input type="text" name="contact" placeholder="Phone or Instagram Handle" required>
+
+            <input type="text" name="tattoo_idea" placeholder="Tattoo Idea" required>
+
+            <textarea name="placement" placeholder="Where on your body?" required></textarea>
+
+            <textarea name="extra_notes" placeholder="Any extra details (size, color, style)"></textarea>
+
+            <button type="submit">Submit Booking Request</button>
+        </form>
+    </div>
+
+    <!-- DEPOSIT INFO -->
+    <div class="card">
+        <h2>Deposit</h2>
+        <p>A $25 deposit is required to secure your appointment.</p>
+
+        <div class="cashapp">
+            <p><strong>Cash App:</strong></p>
+            <p>$JaileeMcDowell</p>
+        </div>
+
+        <div class="cashapp">
+            <p><strong>Venmo:</strong></p>
+            <p>@jaileem</p>
+        </div>
+
+        <p>
+            After submitting your booking request, send your $25 deposit.
+            Your appointment will be confirmed after payment is received.
+        </p>
+    </div>
+
+    <!-- SOCIALS -->
+    <div class="card">
+        <h2>Social Media</h2>
+
+        <p>
+            Instagram: <a href="https://www.instagram.com/jaileeinklab" target="_blank">@jaileeinklab</a>
+        </p>
+
+        <p>Snapchat: jailee_babym</p>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="card">
+        <h2>About Me</h2>
+        <p>
+            My name is Jailee McDowell. I am a tattoo artist specializing in custom ink designs.
+            Every tattoo is designed uniquely for each client.
+        </p>
+    </div>
+
+</div>
+
+</body>
+</html>
